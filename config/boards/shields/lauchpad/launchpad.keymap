@@ -7,18 +7,16 @@
 
         default_layer {
 // ---------------------
-// |   ESC   |    Q    |
-// |   TAB   |    A    |
-// |  SHIFT  |         |
-// |.        |         |
+// |         |         |
+// |         |         |
+// |         |         |
+// |         |         |
             bindings = <
-    &kp ESC   &kp Q
-    &kp TAB   &kp A
-    &kp LSHFT &kp Z
+    &kp       &kp 
+    &kp       &kp 
+    &kp       &kp 
     &kp       &kp                   
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
