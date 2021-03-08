@@ -7,13 +7,13 @@
 
         default_layer {
 // ---------------------
-// |         |         |
+// | VolDown | VolUp   |
 // |         |         |
 // |         |         |
 // |         |         |
             bindings = <
-    &kp C_VOL_DN  &kp C_VOL_UP
-    &kp       &kp 
+    &kp VOL_DN  &kp VOL_UP
+    &kp       &kp C_PP
     &kp       &kp 
     &kp       &kp                   
             >;
