@@ -7,16 +7,31 @@
 
         default_layer {
 // ---------------------
-// | VolDown | VolUp   |
-// |         |         |
+// | VolDown |  VolUp  |
+// |  Mute   |   PP    |
 // |         |         |
 // |         |         |
             bindings = <
     &kp VOL_DN  &kp VOL_UP
-    &kp       &kp C_PP
-    &kp       &kp 
-    &kp       &kp                   
+    &kp C_MUTE  &kp C_PP
+    &kp         &kp 
+    &kp         &kp                   
             >;
+            };
+
+		lower_layer {
+// ---------------
+// | BTCLR | BT1 |
+// | KSLEEP|     |
+// |   F1  |  F2 |
+// |   F7  |  F8 |
+			bindings = <
+&bt 
+&kp 
+&kp 
+&kp 
+			>;
+            
         };
     };
 };
