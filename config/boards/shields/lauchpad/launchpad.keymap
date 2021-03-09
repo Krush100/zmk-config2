@@ -1,37 +1,28 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
+#define DEFAULT 0
+#define NAVI    1
+
+#define NONE 0
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-// ---------------------
-// | VolDown |  VolUp  |
-// |  Mute   |   PP    |
-// |         |         |
-// |         |         |
             bindings = <
-    &kp VOL_DN  &kp VOL_UP
-    &kp C_MUTE  &kp C_PP
-    &kp         &kp 
-    &kp         &kp                   
+                &tog NAVI       &kp KP_DIVIDE
+                &kp NUMBER_7    &kp NUMBER_8
+                &kp NUMBER_4    &kp NUMBER_5
+                &kp NUMBER_1    &kp NUMBER_2
             >;
-            };
+        };
 
-		lower_layer {
-// ---------------
-// | BTCLR | BT1 |
-// | KSLEEP|     |
-// |   F1  |  F2 |
-// |   F7  |  F8 |
-			bindings = <
-&bt 
-&kp 
-&kp 
-&kp 
-			>;
-            
+        nav_layer {
+            bindings = <
+                &tog NAVI       &kp KP_DIVIDE
+                &kp HOME        &kp UP
+                &kp LEFT        &none
+                &kp END         &kp DOWN
+            >;
         };
     };
 };
