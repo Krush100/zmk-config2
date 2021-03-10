@@ -9,19 +9,19 @@
 
         default_layer {
             bindings = <
-                &tog NAVI       &kp KP_DIVIDE
-                &kp NUMBER_7    &kp NUMBER_8
-                &kp NUMBER_4    &kp NUMBER_5
-                &kp NUMBER_1    &kp NUMBER_2
+                &kp C_VOL_DN &kp C_VOL_UP
+                &kp C_MUTE   &kp C_PP
+                &kp C_PREV   &kp C_NEXT
+                &tog NAVI    &kp F1
             >;
         };
 
         nav_layer {
             bindings = <
-                &tog NAVI       &kp KP_DIVIDE
-                &kp HOME        &kp UP
-                &kp LEFT        &none
-                &kp END         &kp DOWN
+                &kp F2       &kp F3
+                &kp F4       &kp F5
+                &kp F6       &bt BT_CLR
+                &tog NAVI    &bt BT_SEL 0
             >;
         };
     };
