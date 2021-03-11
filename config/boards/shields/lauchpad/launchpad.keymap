@@ -5,7 +5,7 @@
 
 #define DEFAULT 0
 #define NAVI    1
-
+#define NAVI    2
 #define NONE 0
 
 / {
@@ -17,7 +17,7 @@
                 &kp C_VOL_DN &kp C_VOL_UP
                 &kp C_MUTE   &kp C_PP
                 &kp C_PREV   &kp C_NEXT
-                &tog NAVI    &kp F1
+                &tog NAVI 1  &tog NAVI 2
             >;
         };
 
@@ -26,7 +26,16 @@
                 &kp F2       &kp F3
                 &kp F4       &kp F5
                 &kp F6       &bt BT_CLR
-                &tog NAVI    &bt BT_SEL 0
+                &tog NAVI 1   &bt BT_SEL 0
+            >;
+        };
+        
+        nav_layer {
+            bindings = <
+                &kp F2       &kp F3
+                &kp F4       &kp F5
+                &kp F6       &bt BT_CLR
+                &kp F8       &tog NAVI 2
             >;
         };
     };
