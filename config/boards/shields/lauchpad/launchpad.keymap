@@ -1,3 +1,6 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
 #define DEFAULT 0
 #define NAVI    1
 
