@@ -14,33 +14,10 @@
             ;
 
         row-gpios
-            = <&pro_micro_a 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro_a 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro_d 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-    };
-};
-#include <dt-bindings/zmk/matrix_transform.h>
-
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
-    };
-
-    default_transform: keymap_transform_0 {
-        compatible = "zmk,matrix-transform";
-        columns = <2>;
-        rows = <4>;
-// | MX1  | MX2  |
-// | MX3  | MX4  |
-// | MX5  | MX6  |
-// | MX7  | MX8  |
-        map = <
-RC(0,0) RC(0,1)
-RC(1,0) RC(1,1)
-RC(2,0) RC(2,1)
-RC(3,0) RC(3,1)
-        >;
     };
 };
