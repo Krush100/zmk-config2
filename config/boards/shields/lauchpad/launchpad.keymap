@@ -3,10 +3,9 @@
 
 #include <dt-bindings/zmk/bt.h>
 
-#define default
-#define nav_1 1
-#define nav_2 2
-#define NONE 0
+#define default 0
+#define NAVI_1 1
+#define NAVI_2 2
 
 / {
     keymap {
