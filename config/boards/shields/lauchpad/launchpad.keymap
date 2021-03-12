@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define default
-#define nav_1
-#define nav_2
+#define nav_1 1
+#define nav_2 2
 #define NONE 0
 
 / {
