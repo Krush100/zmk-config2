@@ -22,19 +22,19 @@
 
         nav_1_layer {
             bindings = <
-                &kp F2       &kp F3
-                &kp F4       &kp F5
-                &kp F6       &bt BT_CLR
-                &tog NAVI_1   &bt BT_SEL 0
+                &kp F1       &kp F2
+                &kp F3       &kp F4
+                &kp F5       &kp F6
+                &tog NAVI_1  &kp ENTER
             >;
         };
         
         nav_2_layer {
             bindings = <
-                &kp F2       &kp F3
-                &kp F4       &kp F5
-                &kp F6       &bt BT_CLR
-                &kp F8       &tog NAVI_2
+                &kp F7       &kp F8
+                &kp F9       &kp F10
+                &bt BT_SEL 0 &bt BT_CLR
+                &bt BT_SEL 1 &tog NAVI_2
             >;
         };
     };
